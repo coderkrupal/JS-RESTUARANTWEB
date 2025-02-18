@@ -7,7 +7,10 @@
     list-style-type: none;
 }
 
-header {
+header { 
+    position: sticky;
+    top: 0;
+    z-index: 1000;  
     width: 100%;
     height: 100px;
     background-color: #1B1F3B ;
@@ -30,15 +33,98 @@ header {
     color: white;
 }
 
-i{
-    color: white;
+.open_close{
+    display: none;
 }
 
-
- 
+i{
+    color: white; 
+   
+}
+ .nav_bar{
+    margin-right: 20px;
+ }
 
  ul{
     display: flex;
-    gap: 10px;
+    gap: 25px;
     justify-content: space-around;
+    transition: all 0.5s linear;
+ }
+
+  a:hover{
+     border-bottom: 2px solid rgb(58, 146, 181);
+  }
+
+ a{
+    color: white;
+ }
+  
+ .hero {
+    background: url('/Images/foodlogo.webp') center/cover no-repeat;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    position: relative;
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0; width: 100%; height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Dark overlay */
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+    margin-bottom: 100px
+}
+ 
+ 
+#hero_text{
+    font-size: 30px;
+    font-weight: 800;
+    font-style: normal;
+}
+
+#hero_p{
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #ff5722;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #e64a19;
+}
+
+.why-choose-us {
+    background: linear-gradient(to right, #2c3e50, #4ca1af);
+    color: white;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.why-choose-us h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+ #fotter_edit{
+    text-align: center;
+    font-size: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color:  #1B1F3B;
  }

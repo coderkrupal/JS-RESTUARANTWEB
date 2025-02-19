@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Royal Feast | About Us</title>
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+    .about-section {
+         width: 100%;
+         height: 100vh;
+        background: url('./Images/aboutlogo.webp') center/cover no-repeat;
+        color: rgb(206, 206, 206);
+        text-align: center;
+        padding: 100px 20px;
+        font-family: 'Poppins', sans-serif;
+        position: relative;
+    }
+
+    .about-section::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.6);
+        /* Dark overlay for readability */
+    }
+
+    .about-content {
+        position: relative;
+        max-width: 800px;
+        margin: auto;
+        z-index: 1;
+    }
+
+    .about-content h2 {
+        font-size: 46px;
+        margin-bottom: 20px;
+        font-weight: 900;
+    }
+
+    .about-content p {
+        font-size: 20px;
+        line-height: 1.6;
+        font-weight: 800;
+    }
+</style>
+
+<body>
+    <section class="about-section">
+        <div class="about-content">
+            <h2>About Our Restaurant</h2>
+            <p>Welcome to RoyalFeast, where we serve delicious and authentic cuisine made with the freshest
+                ingredients. Our passion for great food and excellent service ensures an unforgettable dining
+                experience.</p>
+            <p>From carefully crafted dishes to a warm and inviting atmosphere, we strive to make every visit special.
+                Join us for a taste of tradition and quality!</p>
+        </div>
+    </section>
+</body>
+
+</html>

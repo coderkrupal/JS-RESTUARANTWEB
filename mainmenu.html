@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Menu</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f8f8f8;
+            text-align: center;
+        }
+
+        .menu-container {
+    
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            color: #ff5722;
+            margin-bottom: 20px;
+        }
+
+        .menu-category {
+            margin-top: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #ddd;
+        }
+
+        .menu-item {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px 0;
+            border-bottom: 1px solid #eee;
+        }
+
+        .menu-item:last-child {
+            border-bottom: none;
+        }
+
+        .menu-item img {
+            width: 60px;
+            height: 60px;
+            border-radius: 5px;
+            margin-right: 15px;
+        }
+
+        .menu-info {
+            flex: 1;
+            text-align: left;
+        }
+
+        .menu-price {
+            font-weight: bold;
+            color: #ff5722;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="menu-container">
+        <h2>Our Menu</h2>
+
+        <!-- Starters -->
+        <div class="menu-category">
+            <h3>Starters</h3>
+            <div class="menu-item">
+                <img src="/Images/gralic.webp" alt="Starter">
+                <div class="menu-info">
+                    <strong>Garlic Bread</strong>
+                    <p>Crunchy bread with garlic butter.</p>
+                </div>
+                <span class="menu-price">$5.99</span>
+            </div>
+            <div class="menu-item">
+                <img src="/Images/garlictomat.webp" alt="Starter">
+                <div class="menu-info">
+                    <strong>Bruschetta</strong>
+                    <p>Grilled bread topped with tomato & basil.</p>
+                </div>
+                <span class="menu-price">$7.99</span>
+            </div>
+        </div>
+
+        <!-- Main Course -->
+        <div class="menu-category">
+            <h3>Main Course</h3>
+            <div class="menu-item">
+                <img src="/Images/grilledchicken.webp" alt="Main Course">
+                <div class="menu-info">
+                    <strong>Grilled Chicken</strong>
+                    <p>Served with steamed vegetables & sauce.</p>
+                </div>
+                <span class="menu-price">$12.99</span>
+            </div>
+            <div class="menu-item">
+                <img src="/Images/pasta.webp" alt="Main Course">
+                <div class="menu-info">
+                    <strong>Pasta Alfredo</strong>
+                    <p>Creamy alfredo sauce with parmesan cheese.</p>
+                </div>
+                <span class="menu-price">$10.99</span>
+            </div>
+        </div>
+
+        <!-- Desserts -->
+        <div class="menu-category">
+            <h3>Desserts</h3>
+            <div class="menu-item">
+                <img src="/Images/cake1.webp" alt="Dessert">
+                <div class="menu-info">
+                    <strong>Chocolate Lava Cake</strong>
+                    <p>Rich chocolate cake with a molten center.</p>
+                </div>
+                <span class="menu-price">$6.99</span>
+            </div>
+            <div class="menu-item">
+                <img src="/Images/cake2.webp" alt="Dessert">
+                <div class="menu-info">
+                    <strong>Cheesecake</strong>
+                    <p>Classic creamy cheesecake with berries.</p>
+                </div>
+                <span class="menu-price">$5.99</span>
+            </div>
+        </div>
+
+        <!-- Drinks -->
+        <div class="menu-category">
+            <h3>Drinks</h3>
+            <div class="menu-item">
+                <img src="/Images/soda1.webp" alt="Drink">
+                <div class="menu-info">
+                    <strong>Fresh Lemonade</strong>
+                    <p>Refreshing homemade lemonade.</p>
+                </div>
+                <span class="menu-price">$3.99</span>
+            </div>
+            <div class="menu-item">
+                <img src="/Images/coffe.webp" alt="Drink">
+                <div class="menu-info">
+                    <strong>Espresso</strong>
+                    <p>Rich and bold Italian espresso.</p>
+                </div>
+                <span class="menu-price">$2.99</span>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
